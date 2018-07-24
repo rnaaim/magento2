@@ -62,6 +62,7 @@ class Index extends \Magento\Backend\App\Action
             $customer->setEmail($user->first_name."@degetel.com");
             $customer->setFirstname($user->first_name);
             $customer->setLastname($user->last_name);
+            $customer->setAvatar($user->avatar);
             $customer->setPassword($user->first_name."123");
 
                 $customer->save();

@@ -1,0 +1,9 @@
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$customerSession = $objectManager->get('Magento\Customer\Model\Session');
+if($customerSession->isLoggedIn()):
+    ?>
+    <p> hello </p> <img src="<?php //echo($customerSession->getCustomer()->getAvatar()); ?>"/>
+     <img src="https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"/>
+
+<?php endif; ?>
