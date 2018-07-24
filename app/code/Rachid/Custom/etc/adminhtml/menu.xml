@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Rachid_Custom::import" title="Import" translate="title" module="Rachid_Custom" parent="Magento_Customer::customer" sortOrder="50" dependsOnModule="Rachid_Custom" resource="Rachid_Custom::import"/>
-        <add id="Rachid_Custom::import_bulk" title="Bulk Import" translate="title" module="Rachid_Custom" parent="Rachid_Custom::import" sortOrder="10" dependsOnModule="Rachid_Custom" action="custom/hello" resource="Rachid_Custom::import"/>
+        <add id="Rachid_Custom::import" title="Customer Import" translate="title" module="Rachid_Custom" parent="Magento_Customer::customer" sortOrder="50" dependsOnModule="Rachid_Custom" resource="Rachid_Custom::import"/>
+        <add id="Rachid_Custom::import_custom" title="Import" translate="title" module="Rachid_Custom" parent="Rachid_Custom::import" sortOrder="10" dependsOnModule="Rachid_Custom" action="custom/index" resource="Rachid_Custom::import"/>
+
     </menu>
 </config>

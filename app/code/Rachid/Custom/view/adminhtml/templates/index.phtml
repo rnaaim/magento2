@@ -1,0 +1,13 @@
+<p>You have two options : Import by Id or do a global import </p> <br>
+<br>
+
+<form action ="<?php  echo $block->getUrl('custom/import/id');
+?>" method = "post">
+    <input name="form_key" type="hidden" value="<?php /* @escapeNotVerified */ echo $block->getFormKey() ?>" />
+     ID: <br>
+    <input type="text" name="id">
+    <input type="submit" name="Import">
+</form>
+<br>
+<br>
+<p> To do  a global import from  https://reqres.in/api/users </p> click here <a href="<?php echo $block->getUrl('custom/Hello/Index');?>"> Import </a>
